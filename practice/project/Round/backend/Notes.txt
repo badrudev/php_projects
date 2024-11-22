@@ -1,0 +1,136 @@
+---------To create helper in laravel--------------
+
+Step 1: create a helper file
+Go to app/ directory and create a file called helpers.php
+
+Step 2: Write the helper function
+
+Step 3: Include it in our composer.json
+"autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        },
+        "files": [
+            "app/Helpers/helper.php"
+        ]
+    },
+
+Step 4: Regenerate the list of all classes in the app
+composer dump-autoload
+
+
+-----------To Check Laravel Framework-------------
+php artisan --version
+
+
+------------To Create Middleware--------------
+php artisan make:middleware textMiddleware
+
+After successfully create middleware, go to app/http/kernel.php and register your custom middleware here : app/Http/Kernel.php
+protected $routeMiddleware = [
+      'auth' => \App\Http\Middleware\Authenticate::class,
+      'textMiddleware' => \App\Http\Middleware\textMiddleware::class,
+];
+
+
+
+---------------How to create a trait------------
+
+Step 1: Create a Traits directory and file
+Create a folder inside app directory named Traits and inside it create ImageUpload.php hand inside this, create a single method upload() function. Paste the code below:
+
+app/Traits/ImageUpload.php
+
+namespace App\Traits;
+
+use Illuminate\Http\Request;
+
+trait ImageUpload {
+
+    /**
+     * @param Request $request
+     * @return $this|false|string
+     */
+    public function upload(Request $request, $fieldname = 'image', $directory = 'images' ) {
+
+        return $fieldname;
+    }
+}
+
+Step 2. Use the trait inside a controller
+
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\Post;
+
+use App\Traits\ImageUpload;
+
+class PostController extends Controller {
+
+    use ImageUpload;
+
+    public function store(Request $request)
+    {
+
+        $image = $this->upload($request, 'image', 'posts');
+
+        Post::create([
+        'title' => $request->title,
+        'body' => $request->body,
+        'author_id' => $request->author,
+        'image' => $image
+        ]);
+
+        return back()
+            ->with('success','Post created successfully.');
+
+    }
+}
+
+--------------------To Create Table--------------
+php artisan make:migration create_posts_table
+
+database/migrations/2020_04_01_064006_create_posts_table.php
+public function up(){
+    Schema::create('posts', function (Blueprint $table) {
+    $table->bigIncrements('id');
+    $table->string('title');
+    $table->text('body');
+    $table->boolean('is_publish')->default(0);
+    $table->timestamps();
+});
+}
+
+public function down(){
+  Schema::dropIfExists('posts');
+}
+php artisan migrate
+
+php artisan make:migration create_posts_table --table=posts
+Run Specific Migration:
+php artisan migrate --path=/database/migrations/2020_04_01_064006_create_posts_table.php
+
+
+------------To Create Factory for specific table------------
+php artisan make:factory UserFactory --model=User
+
+-------------To seeders for specific table---------
+php artisan db:seed --class=UserTableSeeder
+
+
+---------------To create Queue using redis-----------
+php artisan make:mail SendMail --markdown=emails.testmail
+php artisan make:job SendMailJob
+QUEUE_CONNECTION=database
+php artisan queue:table
+php artisan queue:listen
+
+---------------To Create Event in laravel---------------
+php artisan make:event LoginEvent
+php artisan make:listener LoginListener 
+               OR
+php artisan make:listener LoginListener --event=LoginEvent

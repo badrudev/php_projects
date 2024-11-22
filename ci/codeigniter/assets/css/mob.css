@@ -1,0 +1,295 @@
+@media only screen and (max-width: 700px) {
+    .cancel {
+        display: block;
+    }
+
+    .bars {
+        display: block;
+    }
+
+    .logo-img {
+        width: 50%;
+    }
+
+    .logo {
+        margin: 0;
+        width: 140px;
+    }
+
+    .menu .sidebar {
+
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        max-width: 400px;
+        padding-top: 45px;
+        height: 100%;
+        transition: all 0.5s ease;
+        background: #010101db;
+    }
+
+    #check:checked~.sidebar {
+        left: 0;
+    }
+
+    nav .bars {
+        display: block;
+    }
+
+    #check:checked~.bars {
+        display: none;
+    }
+
+    #check:checked~ul .cancel {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+
+    nav {
+        width: 100%;
+        /* height: 110px; */
+        /* padding: 25px 0; */
+    }
+
+    nav .button {
+        font-size: 35px;
+        margin: 0;
+        display: block;
+    }
+
+    nav .button i {
+        color: #fff;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    nav .menu {
+
+        padding: 0px 20px;
+    }
+
+    .menu ul {
+        display: block;
+        text-align: left;
+    }
+
+    .menu ul li::before {
+        display: none;
+    }
+    .menu ul .contacto a {
+        font-size: 15px;
+        padding: 0;
+        padding-left: 10px;
+    }
+    .contacto {
+        width: 35%;
+        margin-top: 25px;
+        margin-left: 20px;
+        padding: 10px 0px;
+    }
+    .second-phone-image {
+        width: 100%;
+    }
+    .last-div {
+        padding: 0;
+        /* padding: 45px 110px; */
+    }
+    .first-banner-box {
+        padding: 80px 0px 0px 0px;
+    }
+    .heading-01 {
+        font-size: 30px;
+        padding-top: 15px;
+    }
+    .para-01 {
+        font-size: 20px;
+    }
+    .first-btn-01 {
+        width: 145px;
+    }
+    .first-btn-01 a {
+        font-size: 20px;
+    }
+    .phone-image {
+        width: 100%;
+        padding-top: 30px;
+    }
+    .fourth-box-001 {
+        margin-bottom: 30px;
+    }
+    .second-banner-box {
+        padding-top: 35px;
+    }
+    .second-heading-01 {
+        font-size: 25px;
+    }
+    .second-heading-02 {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+    .second-heading-03 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .second-para-01 {
+        text-align: justify;
+        font-size: 17px;
+    }
+    .second-phone-image {
+        margin-top: 10px;
+    }
+    .third-banner-box {
+        padding-top: 40px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .first-01-div, .first-02-div, .first-03-div {
+        margin-bottom: 18px;
+    }
+    .fourth-banner-box {
+        padding: 10px 25px;
+    }
+    .top-heading-box {
+        padding: 5px;
+    }
+    .top-heading-01 {
+        font-size: 25px;
+    }
+    .top-heading-02 {
+        font-size: 40px;
+    }
+    .fifth-top-box {
+        padding: 20px;
+    }
+    .fifth-top-heading {
+        font-size: 30px;
+    }
+    .fifth-content-box {
+        width: 95%;
+        padding: 20px 0;
+        margin-bottom: 20px;
+    }
+    .fifth-btn-box {
+        width: 80%;
+        margin: 20px auto;
+        padding: 10px 20px;
+    }
+    .fifth-heading-001 {
+        font-size: 25px;
+        margin: 10px;
+    }
+    .bottom-heading-01 {
+        font-size: 30px;
+        padding: 15px 0px 35px 0px;
+    }
+    .footer-logo {
+        width: 190px;
+        margin-right: 15px;
+    }
+    .last-para-01 {
+        padding: 0;
+    }
+    .second-footer {
+        text-align: center;
+        padding: 0;
+        color: #2f373d;
+    }
+    .footer-col {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+
+
+
+    .second-banner-box {
+        padding-top: 115px;
+    }
+    .second-phone-image {
+        width: 100%;
+        margin: 0;
+    }
+    .second-content-box {
+        padding: 0 20px;
+    }
+    .second-heading-02 {
+        font-size: 25px;
+    }
+    .second-image-box {
+        position: relative;
+        padding-bottom: 62px;
+    }
+    .second-image-box::before {
+        position: absolute;
+        content: '';
+        width: 280px;
+        background: #0693e3;
+        height: 420px;
+        border-radius: 60px;
+        top: 133px;
+        right: 85px;
+    }
+    .second-image-box::after {
+        position: absolute;
+        content: '';
+        width: 303px;
+        background: rgb(238,238,238);
+        height: 249px;
+        border-radius: 60px;
+        top: 135px;
+        right: 10px;
+    }
+    .third-banner-box {
+        padding-top: 40px;
+        padding-bottom: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .first-01-div, .first-02-div, .first-03-div {
+        margin-bottom: 18px;
+    }
+    .second-phone-image-01{
+        margin-left: 0;
+    }
+    .footer-div {
+        display: block;
+        text-align: center;
+    }
+    .second-banner-box-01 {
+        padding-top: 30px;
+    }
+    .second-footer-para-01 {
+        font-size: 20px;
+        padding: 0 15px;
+        padding-bottom: 20px;
+    }
+    .about-01, .business-01, .career-01, .contact-01 {
+        padding-top: 95px;
+    }
+    .second-banner-box-f {
+        padding-top: 80px;
+    }
+    .upper-heading-box {
+        padding: 15px 0px;
+    }
+    .upper-heading-02 {
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+    .upper-heading-01 {
+        font-size: 20px;
+    }
+    .second-phone-image-02 {
+        margin-left: 0px;
+    }
+}
+
+
+

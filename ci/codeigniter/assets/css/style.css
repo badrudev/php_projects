@@ -1,0 +1,888 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+/*....... Header start ......*/
+
+
+#check {
+    display: none;
+}
+
+nav .button {
+    color: #31344b;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+nav .cancel {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+
+}
+
+.cancel {
+    display: none;
+}
+
+.bars {
+    display: none;
+}
+header {
+    width: 100%;
+    background-color: #00000000;
+    /* box-shadow: 0px 4px 6px 1px rgb(0 0 0 / 10%); */
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+   z-index: 0;
+}
+.logo {
+    width: 220px;
+}
+nav {
+    width: 100%;
+    padding: 10px 0;
+}
+nav .menu {
+    max-width: 1355px;
+    background: #fff;
+    margin: auto;
+    /* padding: 0px 20px; */
+    display: flex;
+    background-color: #0000;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    /* margin: auto 0; */
+}
+
+.menu ul li {
+    margin-top: 15px;
+}
+
+.menu ul a {
+    display: inline-flex;
+    text-decoration: none;
+    padding: 0px 20px;
+    font-size: 19px;
+    color: #fff;
+}
+.contacto {
+    margin-left: 24px;
+    background: #a51313;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+
+.menu ul .contacto a {
+    color: #ffffff;
+    padding: 0px 10px 0px 10px;
+}
+
+/*........ Header end ........*/
+
+
+/*...... homepage start .....*/
+
+
+
+.first-banner-box {
+    width: 100%;
+    padding: 120px 90px 20px 90px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #000000;
+    background-position: center center;
+    background-image: url(../img/bg-img-01.jpg);
+}
+.phone-image {
+    width: 100%;
+}
+.heading-01 {
+    font-size: 69px;
+    color: #fff;
+    font-weight: 800;
+    margin-bottom: 25px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding-top: 70px;
+}
+.para-01 {
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+.first-box-btn {
+    padding-left: 10px;
+}
+.first-btn {
+    width: 210px;
+    background: #a51313;
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.first-vendor-btn {
+    width: 226px;
+    background: #a51313;
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+.second-btn {
+    width: 250px;
+    background: #a51313;
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+.third-btn {
+    width: 230px;
+    background: #a51313;
+    padding: 12px 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.first-btn a, .second-btn a, .third-btn a,.first-vendor-btn a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+}
+.first-btn-01 {
+    width: 115px;
+}
+.first-btn-01 a {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.first-btn-01 i {
+    font-size: 15px;
+    color: #fff;
+    margin-left: 7px;
+}
+.second-banner-box-01 {
+    background: rgb(7 7 57);
+    padding-top: 80px;
+}
+/* .second-heading-01 {
+    color: #f45a2a;
+    font-size: 35px;
+    font-weight: 700;
+    margin-bottom: 25px;
+} */
+/* .second-heading-02 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+} */
+.second-heading-03 {
+    font-size: 52px;
+    font-weight: 700;
+}
+/* .second-para-01 {
+    color: #ffff;
+    font-size: 17px;
+    line-height: 35px;
+} */
+.second-phone-image-01 {
+    width: 100%;
+    position: relative;
+    margin-left: 40px;
+    z-index: 999;
+}
+/* .third-banner-box {
+    background: rgb(7 7 57);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 135px;
+    padding-right: 135px;
+} */
+.first-01-div,
+.first-02-div,
+.first-03-div {
+    border: 3px solid #7A7A7A;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+i.fas.fa-cloud-download-alt,
+i.far.fa-id-badge,
+i.fas.fa-lock {
+    font-size: 50px;
+    color: #f45a2a;
+}
+.third-icon-content {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    padding: 20px 0;
+}
+.fourth-banner-box {
+    background: rgb(7 7 57);
+    padding: 20px 35px;
+}
+.top-heading-box {
+    text-align: center;
+    padding: 25px;  
+}
+.top-heading-01 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #a51313;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.top-heading-02 {
+    font-size: 55px;
+    font-weight: 700;
+    color: #ffff;
+}
+.fourth-box-001 {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 25px 35px;
+    border-radius: 10px;
+    height: 400px;
+}
+.number-heading-01 {
+   color: #a51313;
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.head-heading-01 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+   color: #a51313;
+    text-transform: uppercase;
+}
+.fourth-para-01 {
+    color: #fff;
+    font-size: 17px;
+    line-height: 30px;
+}
+.fourth-btn {
+    background: #a51313;
+    width: 150px;
+    margin: auto;
+    padding: 11px 20px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    color: #fff;
+}
+.fourth-btn a {
+    font-weight: 600;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+}
+.head-heading-02 {
+    color: #a51313;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.fifth-box-banner{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #020E17;
+    background-image: url(../img/second-bg-image.png);
+}
+.fifth-top-box {
+    padding: 35px 35px;
+}
+.fifth-top-heading {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: #a51313;
+    text-transform: uppercase;
+}
+.fifth-content-box {
+    padding: 35px 20px 0px 55px;
+    border: 3px solid #7A7A7A;
+    border-radius: 30px;
+    margin: auto;
+}
+.fifth-heading-001 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+}
+.fifth-heading-001 {
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+.fifth-bottom-heading {
+    text-align: center;
+}
+.bottom-heading-01 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+    padding: 35px 10px 90px 10px;
+}
+.fifth-btn-box {
+    background:  #a51313;
+    width: 75%;
+    margin: 25px auto;
+    padding: 13px 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+.fifth-btn-box a {
+    font-size: 17px;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+/*........ homepage start ........*/
+
+/*........ Business Plan Start ........*/
+
+
+/* .second-banner-box {
+    background: rgb(7 7 57);
+    padding-top: 150px;
+} */
+/* .second-heading-01 {
+    color: #f45a2a;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+} */
+/* .second-heading-02 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 30px;
+} */
+.second-heading-03 {
+    font-size: 52px;
+    font-weight: 700;
+}
+/* .second-para-01 {
+    color: #ffff;
+    font-size: 17px;
+    line-height: 35px;
+} */
+.second-phone-image {
+    width: 90%;
+    position: relative;
+    margin-left: 120px;
+    z-index: 999;
+}
+.second-banner-box::before {
+    position: absolute;
+    content: '';
+    width: 385px;
+    background: #0693e3;
+    height: 630px;
+    border-radius: 75px;
+    top: 360px;
+    right: 285px;
+}
+.second-image-box::after {
+    position: absolute;
+    content: '';
+    width: 440px;
+    background: rgb(238,238,238);
+    height: 440px;
+    border-radius: 75px;
+    top: 361px;
+    right: 75px;
+}
+
+
+
+/* .third-banner-box {
+    background: rgb(7 7 57);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 135px;
+    padding-right: 135px;
+} */
+.first-01-div, .first-02-div, .first-03-div {
+    border: 3px solid #7A7A7A;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+i.fas.fa-cloud-download-alt, i.far.fa-id-badge, i.fas.fa-lock {
+    font-size: 50px;
+    color: #f45a2a;
+}
+.third-icon-content {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    padding: 20px 0;
+}
+/*........ Business Plan End ........*/
+
+/*...... About us Start ......*/
+
+/* .second-banner-box {
+    background: rgb(7 7 57);
+    padding-top: 150px;
+} */
+/* .second-heading-01 {
+    color: #f45a2a;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+} */
+/* .second-heading-02 {
+    font-size: 50px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 30px;
+} */
+
+.about-01, .business-01, .career-01, .contact-01 {
+    padding-top: 145px;
+}
+.second-heading-03 {
+    font-size: 52px;
+    font-weight: 700;
+}
+/* .second-para-01 {
+    color: #ffff;
+    font-size: 17px;
+    line-height: 35px;
+} */
+.second-phone-image {
+    width: 90%;
+    position: relative;
+    margin-left: 120px;
+    z-index: 999;
+}
+/* .second-image-box::before {
+    position: absolute;
+    content: '';
+    width: 385px;
+    background: #0693e3;
+    height: 630px;
+    border-radius: 75px;
+    top: 360px;
+    right: 285px;
+} */
+.second-image-box::after {
+    position: absolute;
+    content: '';
+    width: 440px;
+    background: rgb(238,238,238);
+    height: 440px;
+    border-radius: 75px;
+    top: 361px;
+    right: 75px;
+}
+
+
+/* .third-banner-box {
+    background: rgb(7 7 57);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 135px;
+    padding-right: 135px;
+} */
+.first-01-div, .first-02-div, .first-03-div {
+    border: 3px solid #7A7A7A;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+i.fas.fa-cloud-download-alt, i.far.fa-id-badge, i.fas.fa-lock {
+    font-size: 50px;
+    color: #f45a2a;
+}
+.third-icon-content {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    padding: 20px 0;
+}
+
+
+/*...... About us end ......*/
+
+/*...... Career start .......*/
+/* .second-banner-box {
+    background: rgb(7 7 57);
+    padding-top: 150px;
+} */
+/* .second-heading-01 {
+    color: #f45a2a;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+} */
+.second-heading-02 {
+    font-size: 45px;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.second-heading-03 {
+    font-size: 52px;
+    font-weight: 700;
+}
+.second-para-01 {
+    color: #ffff;
+    font-size: 15px;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.second-phone-image {
+    width: 90%;
+    position: relative;
+    margin-left: 120px;
+    z-index: 999;
+}
+.second-image-box::before {
+    position: absolute;
+    content: '';
+    width: 385px;
+    background: #0693e3;
+    height: 630px;
+    border-radius: 75px;
+    top: 360px;
+    right: 285px;
+}
+.second-image-box::after {
+    position: absolute;
+    content: '';
+    width: 440px;
+    background: rgb(238,238,238);
+    height: 440px;
+    border-radius: 75px;
+    top: 361px;
+    right: 75px;
+}
+
+
+/* .third-banner-box {
+    background: rgb(7 7 57);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    padding-left: 135px;
+    padding-right: 135px;
+} */
+.first-01-div, .first-02-div, .first-03-div {
+    border: 3px solid #7A7A7A;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+i.fas.fa-cloud-download-alt, i.far.fa-id-badge, i.fas.fa-lock {
+    font-size: 50px;
+    color: #f45a2a;
+}
+.third-icon-content {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    padding: 20px 0;
+}
+
+/*....... Career End ........*/
+
+/*....... Contact Us Start ........*/
+.f-left {
+    width: 90% !important;
+}
+.f-right {
+    width: 90% !important;
+}
+.second-phone-image-02{
+    width: 90%;
+    position: relative;
+    margin-left: 120px;
+    z-index: 999;
+}
+
+.second-banner-box {
+    background: rgb(7 7 57);
+    padding-top: 150px;
+}
+/* .second-content-box {
+    border: 2px solid #7A7A7A;
+    padding: 40px 20px 0px 20px;
+    border-radius: 20px;
+    margin-top: 25px;
+} */
+.second-heading-01 {
+    color: #a51313;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.form-item {
+    margin: 40px 0;
+    width: 100%;
+}
+.form-field .form-item {
+    margin: 0px !important;
+}
+.fifth-content-box input, .fifth-content-box textarea {
+    /* margin: 15px auto; */
+    width: 95%;
+    padding: 10px 20px;
+    border-radius: 7px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    color: #616161;
+    resize: none;
+    box-shadow: 2px 5px 5px 0px rgb(0 0 0 / 10%);
+}
+.btn-submit {
+    width: 95%;
+    font-size: 20px;
+    padding: 10px 35px;
+    border-radius: 8px !important;
+    background: #a51313;
+    color: #fff;
+    border: none;
+    box-shadow: 0px 0px 8px 0px rgb(205 196 196 / 55%);
+}
+
+.closed-btn {
+    margin-left: auto;
+    padding: 1.25em 1.25em;
+}
+.closed-btn:focus{
+    color: sandybrown;
+    border-radius: 0;
+    border: none;
+}
+.msg-content-heading-01 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 800;
+    color: #f45a2a;
+    padding-bottom: 20px;
+}
+.msg-content-heading-02 {
+    font-size: 17px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.third-banner-box {
+    background: rgb(7 7 57);
+    padding-top: 15px;
+    padding-bottom: 50px;
+    padding-left: 135px;
+    padding-right: 135px;
+}
+.first-01-div, .first-02-div, .first-03-div {
+    border: 3px solid #7A7A7A;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+i.fas.fa-cloud-download-alt, i.far.fa-id-badge, i.fas.fa-lock {
+    font-size: 50px;
+    color: #a51313;
+}
+.third-icon-content {
+    font-size: 25px;
+    font-weight: 700;
+    color: #fff;
+    padding: 20px 0;
+}
+.form-field{
+    display: flex;
+}
+
+/*....... Contact Us End ........*/
+
+/*........ Features start ........*/
+.second-banner-box-f {
+    background: rgb(7 7 57);
+    padding-top: 150px;
+}
+
+.upper-heading-box {
+    padding: 30px 0px;
+}
+
+.upper-heading-01 {
+    color: #a51313;
+    font-weight: 800;
+    font-size: 15px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.upper-heading-02 {
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.accor-01 {
+    width: 96%;
+    margin: auto;
+    padding: 10px 0 25px 0;
+    border-radius: 25px;
+    border: 3px solid #7c8596;
+}
+
+.card-01 {
+    width: 90%;
+    background: none;
+    margin: auto;
+}
+.heading-btn-01 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #a51313;
+    background: 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #fff !important;
+}
+.heading-btn-01:focus {
+    z-index: 3;
+    border-color:0;
+    outline: 0;
+    box-shadow: none;
+}
+.accordion-button:not(.collapsed) {
+    color: #a51313;
+    background-color: #e7f1ff00;
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.125);
+}
+.accod-btn::before {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: 0;
+    font-family: 'FontAwesome';
+    content: "\f0da";   
+    background-image: none; 
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+    color: #05FC75;
+    margin-right: 10px;
+
+}
+.accod-btn:not(.collapsed)::before {
+    content: "\f0da";
+    transform: rotate(-90deg);
+    background-image: none;  
+    color: #05FC75;
+}
+.accod-details {
+    color: #fff;
+    font-size: 18px;
+    line-height: 35px;
+    border-bottom: 1px solid #fff;
+}
+
+.accod-btn::after {
+    
+    display: none;        
+}
+
+/*...... Feature End ........*/
+
+/*........ Footer start ........*/
+
+.last-div {
+    padding: 45px 110px;
+}
+.footer-div {
+    display: flex;
+    padding-top: 0px;
+}
+.last-para-01 {
+    color: #35383c;
+    font-size: 18px;
+    line-height: 35px;
+    padding-top: 17px;
+}
+.footer-logo {
+    width: 250px;
+    margin-right: 45px;
+}
+.list-heading {
+    color: #2f373d;
+    font-size: 25px;
+    padding-bottom: 20px;
+    margin: 0;
+    font-weight: 700;
+}
+.list ul {
+    list-style: none;
+    padding: 0;
+}
+.list ul li {
+    color: #7e868c;
+    padding-top: 10px;
+    font-size: 17px;
+}
+.list ul li a {
+    color: #7e868c;
+    text-decoration: none;
+}
+.list ul li a:hover{
+    color: #4169e1;
+}
+.second-footer {
+    text-align: center;
+    /* padding-left: 45px; */
+}
+.second-footer-para-01 {
+    font-size: 17px;
+    color: #2f373d;
+    padding-bottom: 30px;
+    margin: 0;
+}
+/*......... Footer End .........*/
+
+
+
+/* Custome CSS */
+
+.error-class{
+	color: red;
+}
